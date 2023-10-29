@@ -234,3 +234,18 @@ class AutoDlConfig {
         }
     }
 }
+$autoDl = 2; // 示例值，根据您的需求设置
+$updateId = isset($_GET['id']) ? $_GET['id'] : null;
+$usePack = isset($_GET['pack']) ? $_GET['pack'] : 1;
+$desiredEdition = isset($_GET['edition']) ? $_GET['edition'] : null;
+$desiredEditionMixed = null; // 根据您的需求设置
+$desiredVE = null; // 根据您的需求设置
+
+$autoDlConfig = new AutoDlConfig(
+    $autoDl,
+    $updateId,
+    $usePack,
+    $desiredEdition,
+    $desiredEditionMixed,
+    $desiredVE
+);
