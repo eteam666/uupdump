@@ -17,7 +17,7 @@ limitations under the License.
 
 require_once 'api/get.php';
 require_once 'shared/utils.php';
-require_once 'contrib/get.php';
+
 
 class AutoDlConfig {
     private $files;
